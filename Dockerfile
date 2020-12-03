@@ -1,8 +1,6 @@
 FROM ubuntu:18.04
 LABEL maintainer=rgs1<rgs1@uw.edu>
 
-ARG DEBIAN_FRONTEND=noninteractive
-
 # base utils to be used inside container
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
